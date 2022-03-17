@@ -15,18 +15,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        configureNextButton();
+
     }
 
-    private void configureNextButton(){
-        Button nextButton = (Button) findViewById(R.id.button);
-        nextButton.setOnClickListener(new View.OnClickListener(){
-            @Override
-                    public void onClick(View view){
-                Intent i = new Intent(MainActivity.this, SecondActivity.class);
-              startActivity(i);
 
-            }
-        });
     }
-}
