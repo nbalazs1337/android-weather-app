@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black_shade_1"
+    android:background="@drawable/tinypicture"
     android:backgroundTintMode="screen"
     tools:context=".MainActivity"
+
     >
 
 
@@ -33,62 +34,47 @@
         android:layout_width="360dp"
         android:layout_height="100dp"
         android:layout_marginStart="24dp"
+        app:cardBackgroundColor="@color/black_shade_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/locationNameId"
-        app:cardBackgroundColor="@color/black_shade_1"
-        app:layout_constraintVertical_bias="0.037" >
+        app:layout_constraintVertical_bias="0.093"
+        android:background="@drawable/tinypicture2">
 
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="399dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tinypicture2">
+
 
             <TextView
-                android:id="@+id/locationTextViewId"
-                android:layout_width="83dp"
-                android:layout_height="39dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_centerInParent="true"
-                android:layout_marginStart="93dp"
-                android:layout_marginTop="28dp"
-                android:layout_marginEnd="184dp"
-                android:layout_marginBottom="33dp"
-                android:padding="10dp"
-                android:text="TextView"
-                android:textSize="15sp"
+                android:id="@+id/textView4"
+                android:layout_width="81dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="236dp"
+                android:layout_marginTop="31dp"
+                android:layout_marginEnd="43dp"
+                android:text="19F"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
                 android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="69dp"
                 android:layout_height="59dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="279dp"
-                android:layout_marginBottom="25dp"
                 app:srcCompat="@android:drawable/btn_dialog" />
 
             <TextView
-                android:id="@+id/textView4"
-                android:layout_width="81dp"
-                android:layout_height="34dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="199dp"
-                android:layout_marginTop="36dp"
-                android:layout_marginEnd="80dp"
-                android:layout_marginBottom="30dp"
-                android:text="19F" />
+                android:id="@+id/locationTextViewId"
+                android:layout_width="166dp"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
